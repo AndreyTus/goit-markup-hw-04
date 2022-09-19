@@ -562,7 +562,7 @@ img {
 }
 
 .soc-ico {
-    fill: var(--btn-active-color)
+    fill: var(--btn-active-color);
     width: 20px;
     height: 20px;
 
