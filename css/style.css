@@ -420,20 +420,14 @@ img {
     height: 60px;
     width: 106px;
     margin: 16px 32px;
+    fill: #AFB1B8;
 }
-.box:hover,
+.box:hover svg,
 .link-box:focus {
     cursor: pointer;
     border-color: var(--btn-color);
     fill: var(--btn-color);
 }
-.box:hover,
-.box:focus {
-    cursor: pointer;
-    border-color: var(--btn-color);
-    fill: var(--btn-color);
-}
-
 
 /* Pages Portfolio - Section main*/
 
@@ -482,6 +476,20 @@ img {
     display: flex;
     flex-wrap: wrap;
 }
+.shadow-link {
+    display: block;
+    color: currentColor;
+}
+a {
+    text-decoration: none;
+}
+.shadow-link:hover, 
+.shadow-link:focus {
+    cursor: pointer;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
+    0px 4px 4px rgba(0, 0, 0, 0.06), 
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 
 /* Section footer 1-2 pages*/
 
@@ -524,14 +532,10 @@ img {
     margin-bottom: 9px;
 }
 
-
-
-
-
-.foot-link {
+.footer-link {
     display: flex;
     flex-direction: column;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     height: 80px;
     width: 206px;
     margin-left: 70px;
@@ -540,30 +544,31 @@ img {
     display: flex;
     align-items: baseline;
 }
-
-.foot-link p {
+.footer-link p {
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
     color: var(--header-color);
     margin-bottom: 20px;
-
 }
 .list-footer {
     display: flex;
 }
-.page-ico {
+.page-icon {
     align-items: center;
     width: 44px;
     height: 44px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
 }
-
-.soc-ico {
+.social-icon {
     fill: var(--btn-active-color);
     width: 20px;
     height: 20px;
-
+    margin: 12px 12px;
+}
+.page-icon:hover,
+.page-icon:focus {
+    background-color: var(--btn-color);
 }
