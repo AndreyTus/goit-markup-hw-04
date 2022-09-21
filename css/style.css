@@ -154,6 +154,9 @@ header {
     fill: #757575;
 
 }
+.link.current {
+    color: var(--btn-color);
+}
 
 .header-site-info:hover svg,
 .contacts-icon:focus {
@@ -472,6 +475,8 @@ img {
     width: 100%;
     height: 100%;
     display: flex;
+    justify-content: center;
+    align-items: center;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
 }
@@ -483,19 +488,19 @@ img {
 .link-box {
     height: 60px;
     width: 106px;
-    margin: 16px 32px;
+    fill: currentColor;
     fill: #AFB1B8;
 }
 
-.box:hover svg,
-.box:focus {
+.box-hover:hover svg,
+.box-hover:focus {
     cursor: pointer;
     border-color: var(--btn-color);
     fill: var(--btn-color);
 }
 
-.box:hover a,
-.box:focus {
+.box-hover:hover,
+.box-hover:focus {
     cursor: pointer;
     border-color: var(--btn-color);
     fill: var(--btn-color);
@@ -630,7 +635,7 @@ a {
     margin-left: 70px;
 }
 
-.footer2 {
+.footer-cont {
     display: flex;
     align-items: baseline;
 }
